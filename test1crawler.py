@@ -4,6 +4,7 @@ import bs4
 url="https://ck101.com/forum-3621-1.html"
 # built a request object, which include a "Request Headers" imformation
 request=req.Request(url, headers={
+    "cookie":"over-18"=1
     "user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36 Edg/97.0.1072.69"
 })
 
@@ -28,4 +29,3 @@ for x in titles:
             ev-=1
     else:
         i=0
-    
